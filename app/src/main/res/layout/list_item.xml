@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/date_forecast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Monday 6:00 PM"
+        android:textSize="20sp"/>
+    <LinearLayout
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/img_forecast"
+            android:layout_width="60dp"
+            android:layout_height="60dp" />
+        <TextView
+            android:id="@+id/desc_forecast"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            tools:text="Partly Cloudy"
+            android:textSize="20sp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="4dp"/>
+    </LinearLayout>
+
+        <TextView
+            android:id="@+id/temp_forecast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Temp "
+            android:textSize="20sp"/>
+        <TextView
+            android:id="@+id/act_temp_forecast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            tools:text="32 C"/>
+
+    <TextView
+        android:id="@+id/humudity_forecast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Humidity"
+        android:textSize="20sp"
+        android:layout_marginTop="4dp"/>
+    <TextView
+        android:id="@+id/act_humidity_forecast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="90%"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/windspeed_forecast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wind Speed"
+        android:textSize="20dp"
+        android:layout_marginTop="4dp"/>
+    <TextView
+        android:id="@+id/act_windspeed_forecast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="32 m/s"
+        android:textSize="18sp"/>
+
+
+</LinearLayout>
