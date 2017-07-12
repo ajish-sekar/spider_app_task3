@@ -211,6 +211,7 @@ public class MainActivity extends AppCompatActivity {
 
             Weather weather = extractFeatureFromJson(jsonResponse);
             if(weather!=null){
+                db.deleteWeather(weather);
                 db.addWeather(weather);
             }
             return weather;
